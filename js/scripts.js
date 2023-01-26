@@ -19,7 +19,7 @@ function newItem(){
         let inputValue = $('#input').val();
         li.append(inputValue);
 
-    // Tried to empty input field after item has been added
+        // Function to reset input field to empty
         function resetForm() {
             $('#input').val('');
         }
@@ -28,8 +28,9 @@ function newItem(){
             alert("You must write something!");
         } else {
             $('#list').append(li);
-            // resetForm();
+            resetForm();
         }
+        
     
     
     // 2. Crossing out an item from the list of items:

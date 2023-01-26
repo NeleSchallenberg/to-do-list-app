@@ -20,9 +20,9 @@ function newItem(){
         li.append(inputValue);
 
     // Tried to empty input field after item has been added
-        // function resetForm() {
-        //     inputValue.addClass('delete');
-        // }
+        function resetForm() {
+            $('#input').val('');
+        }
        
         if (inputValue === '') {
             alert("You must write something!");

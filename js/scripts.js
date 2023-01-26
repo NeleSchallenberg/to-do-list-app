@@ -18,13 +18,19 @@ function newItem(){
         let li = $('<li></li>')
         let inputValue = $('#input').val();
         li.append(inputValue);
+
+    // Tried to empty input field after item has been added
+        // function resetForm() {
+        //     inputValue.addClass('delete');
+        // }
        
         if (inputValue === '') {
             alert("You must write something!");
         } else {
             $('#list').append(li);
+            // resetForm();
         }
-
+    
     
     // 2. Crossing out an item from the list of items:
     // JavaScript
